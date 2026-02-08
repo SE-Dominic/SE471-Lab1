@@ -16,7 +16,7 @@ public class Main {
         lst.add(p5);
         lst.add(p4);
         SortingUtility su = new SortingUtility();
-
+        su.sort(lst, 1);
         su.sort(lst, 2);
     }
 
@@ -88,12 +88,13 @@ class SortingUtility {
 
     public List<Product> sort(ArrayList<Product> items, int sortApproach) {
         if (sortApproach == 1) {
+            System.out.println("Bubble Sort: ");
             ArrayList<Product> sorted = bubbleSort(items);
             for (int i = 0; i < items.size(); i++) {
                 System.out.println(sorted.get(i).getName());
             }
         } else if (sortApproach == 2) {
-            System.out.println("2nd option chosen.");
+            System.out.println("Quick Sort: ");
             ArrayList<Product> sorted = quickSort(items, 0, items.size() - 1);
             for (int i = 0; i < items.size(); i++) {
                 System.out.println(sorted.get(i).getName());
