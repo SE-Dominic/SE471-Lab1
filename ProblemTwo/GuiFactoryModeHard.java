@@ -1,6 +1,6 @@
 package ProblemTwo;
 
-public class GuiFactoryModeBeginner implements AbstractGUIFactoryIF{
+public class GuiFactoryModeHard implements AbstractGUIFactoryIF {
     @Override
     public CharacterPanelIF createCharacterSelectionPanel() {
         return null;
