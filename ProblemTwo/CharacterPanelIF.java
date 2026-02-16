@@ -1,5 +1,5 @@
 package ProblemTwo;
 
 public interface CharacterPanelIF {
-    public void selectCharacter();
+  public void selectCharacter();
 }

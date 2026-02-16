@@ -1,4 +1,5 @@
 package ProblemTwo;
+
 public interface WeaponPanelIF {
-    public void selectWeapon();
+  public void selectWeapon();
 }
